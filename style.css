@@ -98,7 +98,6 @@ header {
   align-items: center;
 }
 
-
 h1 {
   font-size: 56px;
   color: #7342d6;
@@ -127,7 +126,6 @@ button:active {
   font-size: 20px;
   border-radius: 4px;
   border: none;
-
 }
 
 .header__img--wrapper {
@@ -136,14 +134,13 @@ button:active {
 }
 
 .container {
-padding: 56px 0;
-
+  padding: 56px 0;
 }
 
 .row {
-width: 100%;
-max-width: 1200px ;
-margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* HIGHLIGHTS */
@@ -154,31 +151,30 @@ margin: 0 auto;
 
 #highlights:before,
 #highlights:after {
-background: url(assets/wave.svg);
-content: "";
-position: absolute;
-width: 101vw;
-height: 12vw;
+  background: url(assets/wave.svg);
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
 
-left: 0;
-z-index: 1;
-background-size: cover;
-background-repeat: no-repeat;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #highlights:before {
-top: 1px;
-transform: translateY(-100%);
+  top: 1px;
+  transform: translateY(-100%);
 }
 
 #highlights:after {
-bottom: 1px;
-transform: translateY(100%) rotate(180);
+  bottom: 1px;
+  transform: translateY(100%) rotate(180);
 }
 
 .highlight__wrapper {
   display: flex;
-
 }
 
 .highlight {
@@ -189,7 +185,6 @@ transform: translateY(100%) rotate(180);
   justify-content: center;
   flex-direction: column;
   position: relative;
- 
 }
 
 .highlight__para {
@@ -200,7 +195,7 @@ transform: translateY(100%) rotate(180);
 .highlight__img {
   border: 2px solid #7342d65d;
   color: #7342d6;
-  width:100px ;
+  width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -211,8 +206,8 @@ transform: translateY(100%) rotate(180);
 }
 
 .highlight__subtitle {
-font-size: 20px ;
-margin-bottom: 16px;
+  font-size: 20px;
+  margin-bottom: 16px;
 }
 
 /*
