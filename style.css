@@ -65,10 +65,10 @@ li {
 }
 
 #landing {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: rgba(110, 60, 211, 0.1);
 }
 
- header {
+header {
   height: calc(100vh-80px);
 }
 
@@ -79,5 +79,18 @@ li {
   height: 100%;
   display: flex;
   flex-direction: column;
-  
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 56px;
+  color: #7342d6;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
 }
