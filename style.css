@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .purple {
   color: #7342d6;
 }
@@ -23,6 +27,15 @@ nav {
 p {
   line-height: 1.5;
 }
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .nav__container {
   padding-top: 32px;
   width: 100%;
@@ -74,6 +87,13 @@ li {
   text-decoration: none;
 }
 
+.btn__menu{
+
+}
+/*
+LANDING
+*/
+
 #landing {
   background-color: rgba(110, 60, 211, 0.1);
 }
@@ -119,6 +139,10 @@ button:active {
   transform: translateY(1px);
 }
 
+.btn:hover {
+
+}
+
 .btn {
   background-color: #7342d6;
   color: white;
@@ -141,8 +165,17 @@ button:active {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
+.row__column {
+display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-cursor {
+cursor: not-allowed;
+}
 /* HIGHLIGHTS */
 
 #highlights {
@@ -170,6 +203,7 @@ button:active {
 #highlights:after {
   bottom: 1px;
   transform: translateY(100%) rotate(180deg);
+  
 }
 
 .highlight__wrapper {
@@ -211,11 +245,100 @@ button:active {
 
 /*
 
-FEATURES
+FEATURED
 
 */
 
-#features {
+#featured {
   background-color: rgba(115, 66, 214, 0.1);
-  height: 1000px;
+  padding-top: 8vw;
 }
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+width: 25%;
+padding: 24px;
+}
+
+.book__img {
+  max-height: 380px;
+  transition:all 300ms ease ;
+  cursor: no-drop;
+}
+
+.book__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+}
+
+.book:hover .book__img {
+  transform: scale(1.03);
+}
+
+.book__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.book__title:hover {
+  text-decoration: underline;
+  cursor: no-drop;
+}
+
+.book__ratings {
+  margin-bottom: 8px;
+  color: #fabf2a;
+}
+
+.book__price--normal {
+  text-decoration: line-through;
+  padding-right:6px ;
+  color: #bfbfbf;
+}
+
+/* 
+
+EXPLORE
+
+*/
+
+#explore {
+  background-color: rgba(115, 66, 214, 0.1);
+}
+/* 
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #242424;
+}
+
+.footer__logo {
+display: flex;
+}
+
+.footer__logo--img {
+  width:160px ;
+  filter: grayscale(1) invert(1);
+
+}
+.footer__list {
+  margin:20px 0 24px 0;
+}
+
+.footer__link {
+  padding: 0 8px;
+}
+
+.footer__link,
+.footer__copyright {
+  color: #fff;
+} 
